@@ -1,0 +1,17 @@
+# Nmap 7.95 scan initiated Mon May 26 11:25:30 2025 as: /usr/lib/nmap/nmap --script=vulners.nse -sV -p 21 -o vulnerbaility_machine_ftp.txt 192.168.110.166
+Nmap scan report for 192.168.110.166
+Host is up (0.00037s latency).
+
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 2.3.4
+| vulners: 
+|   vsftpd 2.3.4: 
+|     	PACKETSTORM:162145	10.0	https://vulners.com/packetstorm/PACKETSTORM:162145	*EXPLOIT*
+|     	EDB-ID:49757	9.8	https://vulners.com/exploitdb/EDB-ID:49757	*EXPLOIT*
+|     	CVE-2011-2523	9.8	https://vulners.com/cve/CVE-2011-2523
+|_    	1337DAY-ID-36095	9.8	https://vulners.com/zdt/1337DAY-ID-36095	*EXPLOIT*
+MAC Address: 00:0C:29:3C:1B:FE (VMware)
+Service Info: OS: Unix
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon May 26 11:25:34 2025 -- 1 IP address (1 host up) scanned in 3.76 seconds
